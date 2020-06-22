@@ -1,12 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import useJsonFetch from "../hooks/useJsonFetch";
-Request.propTypes = {
 
-};
+Request.propTypes = {};
 
 function Request(props) {
-    const { url,opts} = props;
+    const {url, opts} = props;
     const [data, loading, error] = useJsonFetch(url, opts);
 
     return (
